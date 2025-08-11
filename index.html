@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/94e07ac7dd.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 20px;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .main-table {
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .main-table th {
+            background-color: rgb(30, 164, 241);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid #1976D2;
+        }
+
+        .main-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .shoes-img {
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+            border: 1px solid orange;
+        }
+
+        .size-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .size-table th {
+            background-color: orange;
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+            border: 1px solid orange;
+        }
+
+        .size-table td {
+            padding: 5px;
+            border: 1px solid rgb(221, 218, 218);
+            font-size: 12px;
+            background-color: white;
+        }
+
+        .details-table {
+            width: 100%;
+            padding: 8px;
+            font-size: 12px;
+            border-collapse: collapse;
+        }
+
+        .details-table th {
+            background-color: #7B1FA2;
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+            border: 1px solid #7B1FA2;
+        }
+
+        .details-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            font-size: 12px;
+            background-color: 56white;
+        }
+
+        .price {
+            font-weight: bold;
+            color: red;
+            font-size: 18px;
+            width: 200px;
+        }
+
+        .brand {
+            color: rgb(0, 145, 255);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .brand-and-model {
+            width: 250px;
+        }
+
+        .upBtn {
+            position: fixed;
+            right: 50px;
+            bottom: 110px;
+            background-color: rgb(255, 4, 4);
+            border-radius: 25%;
+
+            & .fa-up-long {
+                font-size: 25px;
+                padding: 10px;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="top"></p>
+
+    <table width="100%" style="text-align: center;position: fixed;top: 0;left: 0;border-collapse: collapse;z-index: 1;">
+        <!-- header -->
+        <tr bgcolor="Black">
+            <td colspan="2" style="padding: 20px;">
+                <a href="index.html"
+                    style="font-size: 30px;color: white;font-family: Happy Town;text-decoration: none; padding: 50px;">👟
+                    MT Shoes</a>
+            </td>
+            <td>
+                <a href="nike.html"
+                    style="font-size: 30px;color: white;font-family: Happy Town;text-decoration: none;">Nike</a>
+            </td>
+            <td>
+                <a href="adidas.html"
+                    style="font-size: 30px;color: white;font-family: Happy Town;text-decoration: none;">Adidas</a>
+            </td>
+            <td>
+                <a href="contact.html"
+                    style="font-size: 30px;color: white;font-family: Happy Town;text-decoration: none;">Contact Us</a>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <table class="main-table">
+        <tr>
+            <td colspan="5">
+                <h1>
+                    <marquee scrollamount="15"
+                        style="background-color: rgb(30, 198, 30);color: white;border-radius: 7px;">🏪 Welcome to MT Store
+                        🏪</marquee>
+                </h1>
+            </td>
+        </tr>
+        <!-- body -->
+        <tr>
+            <th>Image</th>
+            <th>Brand & Model</th>
+            <th>Price</th>
+            <th>Available Sizes</th>
+            <th>Product Details</th>
+        </tr>
+
+        <!-- Row 1-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71Xi58F2+wL._AC_SY695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Nike</div>
+                <div>Air Jordan 1 Mid </div>
+            </td>
+            <td class="price">$129.95 - $270.26</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>White/Light Smoke Grey/Black)</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Synthetic leather, Rubber outsole.</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Lace-Up</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 2-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71meXpmFyJL._AC_SY879_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Nike</div>
+                <div>Nike Kids' </div>
+            </td>
+            <td class="price">$55.00</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Red/White/Black</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Synthetic leather, Rubber outsole.</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Running</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 3-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/81zSx6lLVnL._AC_SX695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Nike</div>
+                <div>Nike Unisex</div>
+            </td>
+            <td class="price">$87.73</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Red/White/Black</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Synthetic leather, Rubber outsole.</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Running</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 4-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71yoYk0c0rL._AC_SX695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Adidas</div>
+                <div>Kaptir 4.0 Sneaker</div>
+            </td>
+            <td class="price">$68.00</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 5-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71jMV8lsi-L._AC_SY695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Adidas</div>
+                <div>Kaptir 3.0 Shoes</div>
+            </td>
+            <td class="price">$55.00</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 6-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71oxeigDtJL._AC_SX695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">adidas Women's</div>
+                <div>Summervent Spikeless Golf Shoe</div>
+            </td>
+            <td class="price">$49.82 - $49.99</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 7-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71-MK5ZQ+gL._AC_SY695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Adidas</div>
+                <div>S2G Spikeless 24 Golf Shoes</div>
+            </td>
+            <td class="price">$49.99 - $100.00</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 8-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71hlY-vdxkL._AC_SX695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Adidas</div>
+                <div>Unisex-Child Training Shoe</div>
+            </td>
+            <td class="price">$69.99</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 9-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/613LIIH2peL._AC_SX695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Adidas</div>
+                <div>V5 Casual Comfort</div>
+            </td>
+            <td class="price">$44.81 - $56.99</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 10-->
+        <tr>
+            <td class="shoes-img">
+                <img src="https://m.media-amazon.com/images/I/71SOOcSlFjL._AC_SX695_.jpg" alt="">
+            </td>
+            <td class="brand-and-model">
+                <div class="brand">Adidas</div>
+                <div>V5 Casual Comfort</div>
+            </td>
+            <td class="price">$48.97</td>
+            <td>
+                <!-- neste table-->
+                <table class="size-table">
+                    <tr>
+                        <th>size</th>
+                        <th>stock</th>
+                    </tr>
+                    <tr>
+                        <td>7.6</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>150</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <!-- neste table-->
+                <table class="details-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Inx1fo</th>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black/Black/Lucid Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Meterial</td>
+                        <td>Rubber</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Drawstring</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br><br>
+
+    <!-- scroll button -->
+    <p class="upBtn"><a href="#top"> <i class="fa-solid fa-up-long"></i> </a></p>
+
+    <!-- footer -->
+    <footer
+        style="width: 100%;text-align: center;background-color: rgb(47, 46, 46);color: white;position: fixed; bottom: 0;left: 0;padding-top: 5px;">
+        <hr width="40%" size="3" color="white">
+        <marquee scrollamount="15">
+            <h2>📚 សុខ​ មេត្តា​ ជានិស្សិតនៃវិទ្យស្ថានស៊ីតិក​ ក្រុមSW14 លេខរៀង35 បង្រៀនដោយលោកគ្រូ រី វិសាន | Project Table 📚</h2>
+        </marquee>
+    </footer>
+</body>
+
+</html>
